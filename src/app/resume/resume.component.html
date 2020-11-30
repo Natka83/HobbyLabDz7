@@ -1,0 +1,50 @@
+<!-- <p>resume works!</p> -->
+<body>    
+    
+    <hr>
+        <!--    for labRab & dz 7    -->
+    
+    <div *ngIf="resumeItems.length >0">
+        <li class="forLiNgFor" *ngFor="let itemRes of resumeItems">
+            <h1>RESUME</h1>
+            <img [src]="itemRes.photo">
+            <p>Name and surname: {{itemRes.fio|uppercase}}</p>
+            <p>Date of birthy: {{itemRes.dateOfBirthy|date:'dd/MM/yyyy'}}</p>
+            <p>Telephon number: {{itemRes.tel}}</p>
+            <p>Email: {{itemRes.email}}</p>
+            <p>Employment history: {{itemRes.expierence}} year</p> 
+            <p>Location:{{itemRes.city}}</p> 
+            <p>Have skills in creating:</p>
+            <p>{{itemRes.skills}}</p> 
+
+
+            <!-- ???????????????????????????????????????????????? -->
+            <!-- <p [ngSwitch]={{itemRes.hobby}}>
+                <p *ngSwitchCase="'Driving'">My hobby is driving</p>
+                <p *ngSwitchCase="'Fishing'">My hobby is fishing</p>
+                <p *ngSwitchCase="'Jamping'">My hobby is jamping</p>
+                <p *ngSwitchCase="'Swimming'">My hobby is swimming</p>
+            </p>  -->   
+
+            <p>Ready for work: {{itemRes.readyForWork|percent}}</p>
+            <p>Last salary: {{itemRes.lastSalary|currency:"UAH":"symbol-narrow"}}</p>
+            <hr>     
+        </li>
+    </div>     
+</body>
+
+
+   <!-- <div>
+                <img [src]="itemRes.photo">
+            </div>
+            <p>Name and surname: <span class="color">{{itemRes.fio}}</span></p>
+            <p>Telephon number:</p>
+                <li>{{tel}}</li>
+                <p>Email: <span class="color">{{itemRes.email}}</span></p>
+                <p>Employment history: <span class="color">{{itemRes.expierence}} years</span></p>
+                <p>Location:<span class="color"> {{itemRes.city}}</span></p>
+            <div>
+                    <p>Have skills in creating:</p>
+                    <li>{{skill}}</li>
+            </div>  -->
+        
