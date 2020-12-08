@@ -5,14 +5,14 @@ body{
     text-align:center;
 }
 
-/* if i'll use //styleUrls: ['./resume.component.css'] in resume.components.ts
+
 div{
-    /* float: left; */
-    /* text-align:left; */
-    /* padding-left: 15px;
+    float: left;
+    text-align:left; 
+    padding-left: 15px;
     padding-right: 10px; 
     text-align: center;
-}  */
+} 
 
 img{
     margin-top: 30px;
@@ -22,7 +22,9 @@ img{
     margin: 0px;
     padding: 0px;
 }
-
+button{
+    margin: 20px;
+}
 /* if i'll use //styleUrls: ['./resume.component.css'] in resume.components.ts
 .forLiNgFor{
     list-style-type: none ;

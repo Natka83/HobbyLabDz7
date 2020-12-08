@@ -21,7 +21,7 @@ export const ITEMS: Resume[]=
         // "Microsoft.Net application.",
         // "MS SQL Server.",
         // "Scripting language javascript and framework jQuery."
-    ]
+        ]
     },
     {
         id:2, 
@@ -34,7 +34,8 @@ export const ITEMS: Resume[]=
         readyForWork:0.75,
         lastSalary:18000,
         dateOfBirthy:"Nov 13 1990",
-        skills:["Web-application.",
+        skills:[
+            "Web-application.",
         "Javascript application.",
         "C# application.",
         "WinForms application.",
@@ -44,6 +45,6 @@ export const ITEMS: Resume[]=
         // "Microsoft.Net application.",
         // "MS SQL Server.",
         // "Scripting language javascript and framework jQuery."
-    ]
+        ]
     }       
 ]

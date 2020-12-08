@@ -1,9 +1,9 @@
 <!-- <p>resume works!</p> -->
 <body>    
     
-    <hr>
+    <hr/>
         <!--    for labRab & dz 7    -->
-    
+<!--     
     <div *ngIf="resumeItems.length >0">
         <li class="forLiNgFor" *ngFor="let itemRes of resumeItems">
             <h1>RESUME</h1>
@@ -18,7 +18,7 @@
             <p>{{itemRes.skills}}</p> 
 
 
-            <!-- ???????????????????????????????????????????????? -->
+             ???????????????????????????????????????????????? -->
             <!-- <p [ngSwitch]={{itemRes.hobby}}>
                 <p *ngSwitchCase="'Driving'">My hobby is driving</p>
                 <p *ngSwitchCase="'Fishing'">My hobby is fishing</p>
@@ -26,11 +26,42 @@
                 <p *ngSwitchCase="'Swimming'">My hobby is swimming</p>
             </p>  -->   
 
-            <p>Ready for work: {{itemRes.readyForWork|percent}}</p>
+            <!--<p>Ready for work: {{itemRes.readyForWork|percent}}</p>
             <p>Last salary: {{itemRes.lastSalary|currency:"UAH":"symbol-narrow"}}</p>
             <hr>     
         </li>
-    </div>     
+    </div>  -->
+    
+        <div >
+            <input [(ngModel)]="obj.fio" placeholder = "FIO" />
+            <input [(ngModel)]="obj.tel" placeholder = "Telephon" />
+            <input [(ngModel)]="obj.email" placeholder = "Email" />
+            <input [(ngModel)]="obj.city" placeholder = "City" />
+            <input [(ngModel)]="obj.expierence" placeholder = "Expierence, year" />
+            <input [(ngModel)]="obj.skills" placeholder = "Skills" />
+            <input [(ngModel)]="obj.photo" placeholder = "Photo" />
+            <input [(ngModel)]="obj.hobby" placeholder = "Hobby" />
+            <input [(ngModel)]="obj.readyForWork" placeholder = "ReadyForWork" />
+            <input [(ngModel)]="obj.dateOfBirthy" placeholder = "DateOfBirthy" type="date"/>
+            <input [(ngModel)]="obj.lastSalary" placeholder = "LastSalary" />
+            <br>
+
+            <button (click)="addInfo(obj)">Добавить</button>
+
+            <li class="forLiNgFor" *ngFor="let itemRes of items">
+                <h1>RESUME</h1>
+                <img [src]="itemRes.photo" [alt]="itemRes.fio">
+                <p>Name and surname: {{itemRes.fio|uppercase}}</p>
+                <p>Date of birthy: {{itemRes.dateOfBirthy|date:'dd/MM/yyyy'}}</p>
+                <p>Telephon number: {{itemRes.tel}}</p>
+                <p>Email: {{itemRes.email}}</p>
+                <p>Employment history: {{itemRes.expierence}} year</p> 
+                <p>Location:{{itemRes.city}}</p> 
+                <p>Have skills in creating:</p>
+                <p>{{itemRes.skills}}</p> 
+            </li>
+        </div>
+      
 </body>
 
 
