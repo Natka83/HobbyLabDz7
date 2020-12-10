@@ -1,0 +1,15 @@
+<body>
+<h1>Picture Galary</h1>
+    <div *ngFor="let itemRes of pictureItems">  
+        <div class="border">
+        <img  [ngClass]="styles" [src]="itemRes.path" (click)="changeImg()">
+        <p>Название картины: {{itemRes.title|uppercase}}</p>
+        <p>Автор: {{itemRes.author}}</p>
+        <p>Год создания: {{itemRes.year}}</p>
+        <p>Местоположение: {{itemRes.place}}</p>
+        <p>Размеры: {{itemRes.size}}</p>   
+        </div>        
+    </div> 
+</body>
+
+<!-- (click)="bigPicture(big)" -->

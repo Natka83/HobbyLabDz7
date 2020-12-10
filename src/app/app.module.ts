@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ResumeComponent } from './resume/resume.component';
+import { PictureComponent } from './picture/picture.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ResumeComponent
+    ResumeComponent,
+    PictureComponent
   ],
   imports: [
     BrowserModule,FormsModule
